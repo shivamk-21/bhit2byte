@@ -2,10 +2,12 @@
   font-size: 16px;
 }
 .header {
-  height: 7vh;
+  height: 9vh;
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1000;
+  background-color: rgb(240, 224, 252);
 }
 .header > img {
   position: inherit;
