@@ -1,10 +1,10 @@
 import React from "react";
-
+import logo from "../assets/logo.png";
 const Header = () => {
   return (
     <div className="header">
-      <img src="https://via.placeholder.com/150" alt="logo" />
-      <h1>Header</h1>
+      <img src={logo} alt="logo" />
+      <h1>AI fashion Lab</h1>
     </div>
   );
 };

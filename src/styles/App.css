@@ -1,30 +1,29 @@
 .App {
   font-size: 16px;
-  background-color: red;
 }
 .header {
-  background-color: blue;
   height: 7vh;
   position: fixed;
   width: 100vw;
 }
 .header > img {
   position: inherit;
-  height: 6vh;
-  margin-top: 0.3%;
-  margin-left: 0.2%;
+  height: 7vh;
+  margin-top: 0.4%;
+  margin-left: 0.5%;
 }
 .header > h1 {
   position: inherit;
-  color: white;
-  margin-left: 4%;
-  margin-top: 0.1%;
+  color: black;
+  margin-left: 5%;
+  margin-top: 0.4%;
   font-size: 2.5em;
+
 }
 .search-bar {
-  position: fixed;
+  position: absolute;
   width: 90vw;
-  height: 7vh;
+  height: 50vh;
   margin-top: 15vh;
   background-color: #f2f2f2;
   display: flex;
@@ -32,26 +31,53 @@
   align-items: center;
   margin-left: 5vw;
   border-radius: 2rem;
+  background-image: url("../assets/search.png");
+  object-fit: cover;
+  opacity: 90%;
 }
 .search-bar > input {
-  width: 90%;
+  width: 80%;
   height: 5vh;
-  border: none;
-  border-radius: 2rem;
+  border: black 1px solid;
+  border-radius: 2rem 0 0 2rem;
   padding-left: 2rem;
   font-size: 1.5em;
+  margin-top: 35vh;
 }
 .search-bar > button {
   width: 7%;
-  height: 5vh;
-  border: none;
-  border-radius: 2rem;
+  height: 5.5vh;
+  border: black 1px solid;
+  border-radius: 0 2rem 2rem 0;
   background-color: #f2f2f2;
   font-size: 1.5em;
   cursor: pointer;
+  margin-top: 35vh;
+}
+.search-bar>div{
+  position: absolute;
+  top:2vw;
+  left:5vw;
+  color: rgb(0, 0, 0);
+  font-size: 5vw;
+  background-color: rgba(255, 255, 255, 0.507);
+  border-radius: 2rem;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+.search-bar>p{
+  position: absolute;
+  top:7vw;
+  left:6vw;
+  color: rgb(0, 0, 0);
+  font-size: 2vw;
+  background-color: rgba(255, 255, 255, 0.507);
+  border-radius: 2rem;
+  padding-left: 1vw;
+  padding-right: 1vw;
 }
 .categories {
-  position: fixed;
+  position: absolute;
   width: 90vw;
   height: 60vh;
   margin-top: 30vh;
@@ -66,24 +92,24 @@
   width: 100vw;
   height: 7vh;
   bottom: 0;
-  background-color: blue;
+  background-color: rgb(238, 219, 253);
   display: flex;
   align-items: center;
 }
 .footer > h2 {
-  color: white;
+  color: rgb(75, 2, 63);
   margin-left: 2%;
   font-size: 2em;
-  border: #f2f2f2 1px solid;
+  border: #474747 1px solid;
   border-radius: 2rem;
   padding-left: 1%;
   padding-right: 1%;
 }
 .footer > h3 {
-  color: white;
+  color: rgb(75, 2, 63);
   margin-left: 73%;
   font-size: 2rem;
-  border: #f2f2f2 1px solid;
+  border: #474747 1px solid;
   border-radius: 2rem;
   padding-left: 1%;
   padding-right: 1%;
