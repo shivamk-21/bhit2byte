@@ -5,6 +5,7 @@ const TileCard = ({ name }) => {
   const [prevPrompt, setPrevPrompt] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [searchResult, setSearchResult] = useState(null);
+  const [keywords, setKeywords] = useState(null);
   const [loading, setLoading] = useState(false);
 
   const toggleModal = () => {
@@ -19,6 +20,7 @@ const TileCard = ({ name }) => {
 
       const data = await response.json();
       setSearchResult(data.result);
+      setKeywords(data.keywords)
       console.log("Response:", data);
       setPrevPrompt(text);
       setShowModal(true);
@@ -36,6 +38,7 @@ const TileCard = ({ name }) => {
           close={toggleModal}
           propmpt={prevPrompt}
           data={searchResult}
+          keywords={keywords}
         />
       )}
       <div className="tile" onClick={() => handleClick(name)}>

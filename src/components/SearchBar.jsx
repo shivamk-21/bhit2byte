@@ -6,6 +6,7 @@ const SearchBar = () => {
   const [prevPrompt, setPrevPrompt] = useState("");
   const [showModal, setShowModal] = useState(false);
   const [searchResult, setSearchResult] = useState(null);
+  const [keywords, setKeywords] = useState(null);
   const [loading, setLoading] = useState(false); // State variable to track loading state
 
   const toggleModal = () => {
@@ -21,12 +22,13 @@ const SearchBar = () => {
 
       const data = await response.json();
       setSearchResult(data.result);
+      setKeywords(data.keywords);
       setPrevPrompt(prompt);
       setShowModal(true);
     } catch (error) {
       console.error("Error fetching data:", error);
     } finally {
-      setLoading(false); // Set loading to false regardless of success or failure
+      setLoading(false);
     }
     setPrompt("");
   };
@@ -38,6 +40,7 @@ const SearchBar = () => {
           close={toggleModal}
           propmpt={prevPrompt}
           data={searchResult}
+          keywords={keywords}
         />
       )}
       <div className="search-bar">

@@ -212,6 +212,7 @@
   flex-direction: column;
   align-items: center;
   border: #4747477e 1px solid;
+  overflow: scroll;
 }
 .singleResponse {
   width: 80%;
@@ -222,11 +223,16 @@
   display: flex;
   align-items: center;
   font-size: 2em;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 2%;
   position: relative;
   word-wrap: break-word; /* For older browsers */
   white-space: normal;
+  align-items: center;
+  justify-content: center;
+}
+.renderImages {
+  width: 45vh;
+  border-radius: 2rem;
 }
 .Close {
   position: absolute;
@@ -350,5 +356,10 @@
     font-size: 2em;
     width: 10vw;
     z-index: 1;
+  }
+
+  .renderImages {
+    width: 35vh;
+    border-radius: 2rem;
   }
 }
