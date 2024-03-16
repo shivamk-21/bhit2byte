@@ -236,3 +236,119 @@
   border-radius: 10rem;
   width: 4vw;
 }
+@media only screen and (max-width: 767px) {
+  .header {
+    height: 8vh;
+  }
+
+  .header > img {
+    height: 6vh;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  .header > h1 {
+    margin-left: 30%;
+    margin-top: 2%;
+    font-size: 2em;
+  }
+  .search-bar {
+    margin-top: 15vh;
+    height: 25vh;
+  }
+  .search-bar > input {
+    width: 50%;
+    height: 4vh;
+    font-size: 1em;
+    margin-top: 10vh;
+  }
+  .search-bar > button {
+    height: 4.5vh;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10vh;
+  }
+  .search-bar > div {
+    top: 5vw;
+    left: 5vw;
+    font-size: 6vw;
+    border-radius: 1rem;
+  }
+  .search-bar > p {
+    position: absolute;
+    top: 12vw;
+    left: 6vw;
+    color: rgb(0, 0, 0);
+    font-size: 4vw;
+  }
+  .categories {
+    margin-top: 5vh;
+    height: 230vh;
+  }
+  .categories > h2 {
+    font-size: 2.5em;
+    margin-top: 1%;
+    margin-left: 1%;
+    color: rgb(0, 0, 0);
+  }
+  .footer {
+    height: 6vh;
+  }
+  .footer > h2 {
+    margin-left: 2%;
+    font-size: 0.85em;
+  }
+  .footer > h3 {
+    margin-left: 45%;
+    font-size: 0.85em;
+  }
+  .tiles {
+    margin-top: 14vh;
+    margin-left: 0vw;
+    width: 80vw;
+    height: 220vh;
+    position: absolute;
+    overflow: hidden;
+  }
+  .tilesHolder {
+    flex-direction: column;
+  }
+  .tile {
+    width: 70vw;
+    height: 70vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+  }
+  .tile > h2 {
+    text-transform: capitalize;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
+  }
+  .Response {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.301);
+    height: 100%;
+    width: 100%;
+    z-index: 500000;
+  }
+  .singleResponse {
+    width: 80%;
+    margin-top: 18%;
+    font-size: 1.5em;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .Close {
+    top: 3%;
+    right: 10%;
+    font-size: 2em;
+    width: 10vw;
+    z-index: 1;
+  }
+}
