@@ -228,7 +228,6 @@
   word-wrap: break-word; /* For older browsers */
   white-space: normal;
   align-items: center;
-  justify-content: center;
 }
 .renderImages {
   width: 45vh;
