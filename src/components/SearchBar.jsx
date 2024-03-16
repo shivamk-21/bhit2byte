@@ -20,8 +20,7 @@ const SearchBar = () => {
       );
 
       const data = await response.json();
-      setSearchResult(data);
-      console.log("Response:", data);
+      setSearchResult(data.result);
       setPrevPrompt(prompt);
       setShowModal(true);
     } catch (error) {
@@ -44,7 +43,7 @@ const SearchBar = () => {
       <div className="search-bar">
         <input
           type="text"
-          placeholder="Get fashion Ideas"
+          placeholder="Get fashion Ideas..."
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
         />

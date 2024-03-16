@@ -156,6 +156,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 .tile > h2 {
   text-transform: capitalize;
