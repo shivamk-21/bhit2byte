@@ -1,3 +1,146 @@
 .App {
   font-size: 16px;
+  background-color: red;
+}
+.header {
+  background-color: blue;
+  height: 7vh;
+  position: fixed;
+  width: 100vw;
+}
+.header > img {
+  position: inherit;
+  height: 6vh;
+  margin-top: 0.3%;
+  margin-left: 0.2%;
+}
+.header > h1 {
+  position: inherit;
+  color: white;
+  margin-left: 4%;
+  margin-top: 0.1%;
+  font-size: 2.5em;
+}
+.search-bar {
+  position: fixed;
+  width: 90vw;
+  height: 7vh;
+  margin-top: 15vh;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vw;
+  border-radius: 2rem;
+}
+.search-bar > input {
+  width: 90%;
+  height: 5vh;
+  border: none;
+  border-radius: 2rem;
+  padding-left: 2rem;
+  font-size: 1.5em;
+}
+.search-bar > button {
+  width: 7%;
+  height: 5vh;
+  border: none;
+  border-radius: 2rem;
+  background-color: #f2f2f2;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+.categories {
+  position: fixed;
+  width: 90vw;
+  height: 60vh;
+  margin-top: 30vh;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5vw;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+}
+.footer {
+  position: fixed;
+  width: 100vw;
+  height: 7vh;
+  bottom: 0;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+}
+.footer > h2 {
+  color: white;
+  margin-left: 2%;
+  font-size: 2em;
+  border: #f2f2f2 1px solid;
+  border-radius: 2rem;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.footer > h3 {
+  color: white;
+  margin-left: 73%;
+  font-size: 2rem;
+  border: #f2f2f2 1px solid;
+  border-radius: 2rem;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.tiles {
+  margin-top: 2%;
+  margin-top: 10vh;
+  margin-left: 0vw;
+  width: 80vw;
+  height: 45vh;
+  position: absolute;
+  overflow: hidden;
+}
+.tilesHolder {
+  position: absolute;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  width: fit-content;
+  height: 100%;
+  background-color: #f2f2f2;
+}
+.tile {
+  width: 20vw;
+  height: 20vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  border-radius: 2rem;
+  background-color: #6d2222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.left {
+  position: absolute;
+  margin-top: 8vh;
+  margin-left: -84vw;
+  width: 3vw;
+  height: 45vh;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.right {
+  position: absolute;
+  margin-top: 8vh;
+  margin-right: -84vw;
+  width: 3vw;
+  height: 45vh;
+  background-color: #f2f2f2;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
