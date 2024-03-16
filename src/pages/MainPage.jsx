@@ -8,8 +8,8 @@ const MainPage = () => {
     <>
       <Header />
       <SearchBar />
-      {/* <Categotries />
-      <Footer /> */}
+      <Categotries />
+      {/* <Footer /> */}
     </>
   );
 };

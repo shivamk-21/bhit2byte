@@ -5,6 +5,7 @@
   height: 7vh;
   position: fixed;
   width: 100vw;
+  top: 0;
 }
 .header > img {
   position: inherit;
@@ -18,10 +19,9 @@
   margin-left: 5%;
   margin-top: 0.4%;
   font-size: 2.5em;
-
 }
 .search-bar {
-  position: absolute;
+  position: relative;
   width: 90vw;
   height: 50vh;
   margin-top: 15vh;
@@ -54,10 +54,10 @@
   cursor: pointer;
   margin-top: 35vh;
 }
-.search-bar>div{
+.search-bar > div {
   position: absolute;
-  top:2vw;
-  left:5vw;
+  top: 2vw;
+  left: 5vw;
   color: rgb(0, 0, 0);
   font-size: 5vw;
   background-color: rgba(255, 255, 255, 0.507);
@@ -65,10 +65,10 @@
   padding-left: 1vw;
   padding-right: 1vw;
 }
-.search-bar>p{
+.search-bar > p {
   position: absolute;
-  top:7vw;
-  left:6vw;
+  top: 7vw;
+  left: 6vw;
   color: rgb(0, 0, 0);
   font-size: 2vw;
   background-color: rgba(255, 255, 255, 0.507);
@@ -77,7 +77,7 @@
   padding-right: 1vw;
 }
 .categories {
-  position: absolute;
+  position: relative;
   width: 90vw;
   height: 60vh;
   margin-top: 30vh;
