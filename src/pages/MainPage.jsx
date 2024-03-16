@@ -9,7 +9,7 @@ const MainPage = () => {
       <Header />
       <SearchBar />
       <Categotries />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
