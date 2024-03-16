@@ -1,9 +1,9 @@
 import React from "react";
 
-const TileCard = () => {
+const TileCard = ({name}) => {
   return (
     <div className="tile">
-      <h2>Categories</h2>
+      <h2>{name}</h2>
     </div>
   )
 };

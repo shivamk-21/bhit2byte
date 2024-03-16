@@ -30,7 +30,7 @@
   position: relative;
   width: 90vw;
   height: 50vh;
-  margin-top: 15vh;
+  margin-top: 25vh;
   background-color: #f2f2f2;
   display: flex;
   justify-content: center;
@@ -51,14 +51,14 @@
   margin-top: 35vh;
 }
 .search-bar > button {
-  width: 7%;
   height: 5.5vh;
   border: black 1px solid;
   border-radius: 0 2rem 2rem 0;
   background-color: #f2f2f2;
   font-size: 1.5em;
-  cursor: poResponseinter;
+  cursor: pointer;
   margin-top: 35vh;
+  width: fit-content;
 }
 .search-bar > div {
   position: absolute;
@@ -81,15 +81,22 @@
   padding-right: 1vw;
 }
 .categories {
-  position: relative;
+  position: relsingleResponseative;
   width: 90vw;
-  height: 47vh;
-  margin-top: 5vh;
+  height: 50vh;
+  margin-top: 20vh;
   display: flex;
   justify-content: space-around;
   margin-left: 5vw;
-  background-color: #b290c275;
+  background-color: #ffffff;
   border-radius: 2rem;
+  box-shadow: 10px 10px 20px 1px rgb(222, 182, 255);
+}
+.categories > h2 {
+  font-size: 3em;
+  margin-top: 1%;
+  margin-left: 1%;
+  color: rgb(0, 0, 0);
 }
 .footer {
   position: relative;
@@ -109,19 +116,20 @@
   border-radius: 2rem;
   padding-left: 1%;
   padding-right: 1%;
+  cursor: pointer;
 }
 .footer > h3 {
   color: rgb(75, 2, 63);
-  margin-left: 73%;
+  margin-left: 75%;
   font-size: 1.2rem;
   border: #474747 1px solid;
   border-radius: 2rem;
   padding-left: 1%;
   padding-right: 1%;
+  cursor: pointer;
 }
 .tiles {
-  margin-top: 2%;
-  margin-top: 10vh;
+  margin-top: 14vh;
   margin-left: 0vw;
   width: 80vw;
   height: 45vh;
@@ -138,42 +146,47 @@
   background-color: #b290c200;
 }
 .tile {
-  width: 20vw;
+  width: 15vw;
   height: 15vw;
   margin-left: 1vw;
   margin-right: 1vw;
   border-radius: 2rem;
-  background-color: #d4a8c1;
+  background-color: #ffe3c8;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.tile > h2 {
+  text-transform: capitalize;
 }
 .left {
   position: absolute;
-  margin-top: 21vh;
+  margin-top: 26vh;
   margin-left: -84vw;
   width: 3vw;
   height: 6vh;
-  background-color: #af34ff61;
+  background-color: #c477f761;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .right {
   position: absolute;
-  margin-top: 21vh;
+  margin-top: 26vh;
   margin-right: -84vw;
   width: 3vw;
   height: 6vh;
-  background-color: #af34ff61;
+  background-color: #c477f761;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: none;
 }
 .Response {
   position: fixed;
@@ -201,7 +214,7 @@
 }
 .singleResponse {
   width: 80%;
-  height: 10vh;
+  height: fit-content;
   margin-top: 2%;
   background-color: #f2f2f2;
   border-radius: 2rem;
