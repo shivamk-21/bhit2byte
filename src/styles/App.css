@@ -120,7 +120,7 @@
 }
 .footer > h3 {
   color: rgb(75, 2, 63);
-  margin-left: 75%;
+  margin-left: 80%;
   font-size: 1.2rem;
   border: #474747 1px solid;
   border-radius: 2rem;
@@ -221,11 +221,12 @@
   border-radius: 2rem;
   display: flex;
   align-items: center;
-  justify-content: center;
   font-size: 2em;
   padding-left: 2%;
   padding-right: 2%;
   position: relative;
+  word-wrap: break-word; /* For older browsers */
+  white-space: normal;
 }
 .Close {
   position: absolute;
@@ -298,7 +299,7 @@
     font-size: 0.85em;
   }
   .footer > h3 {
-    margin-left: 45%;
+    margin-left: 50%;
     font-size: 0.85em;
   }
   .tiles {
