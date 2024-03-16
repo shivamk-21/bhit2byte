@@ -9,6 +9,7 @@
   z-index: 1000;
   background-color: rgb(240, 224, 252);
 }
+
 .header > img {
   position: inherit;
   height: 7vh;
@@ -21,6 +22,9 @@
   margin-left: 5%;
   margin-top: 0.4%;
   font-size: 2.5em;
+  font-family: "Stick No Bills", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 .search-bar {
   position: relative;
@@ -81,12 +85,12 @@
 .categories {
   position: relative;
   width: 90vw;
-  height: 60vh;
+  height: 47vh;
   margin-top: 5vh;
   display: flex;
   justify-content: space-around;
   margin-left: 5vw;
-  background-color: #f2f2f2;
+  background-color: #b290c275;
   border-radius: 2rem;
 }
 .footer {
@@ -102,7 +106,7 @@
 .footer > h2 {
   color: rgb(75, 2, 63);
   margin-left: 2%;
-  font-size: 2em;
+  font-size: 1.2em;
   border: #474747 1px solid;
   border-radius: 2rem;
   padding-left: 1%;
@@ -111,7 +115,7 @@
 .footer > h3 {
   color: rgb(75, 2, 63);
   margin-left: 73%;
-  font-size: 2rem;
+  font-size: 1.2rem;
   border: #474747 1px solid;
   border-radius: 2rem;
   padding-left: 1%;
@@ -133,15 +137,15 @@
   display: flex;
   width: fit-content;
   height: 100%;
-  background-color: #f2f2f2;
+  background-color: #b290c200;
 }
 .tile {
   width: 20vw;
-  height: 20vw;
+  height: 15vw;
   margin-left: 1vw;
   margin-right: 1vw;
   border-radius: 2rem;
-  background-color: #6d2222;
+  background-color: #d4a8c1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,12 +153,12 @@
 }
 .left {
   position: absolute;
-  margin-top: 8vh;
+  margin-top: 21vh;
   margin-left: -84vw;
   width: 3vw;
-  height: 45vh;
-  background-color: #f2f2f2;
-  border-radius: 2rem;
+  height: 6vh;
+  background-color: #af34ff61;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,12 +166,12 @@
 }
 .right {
   position: absolute;
-  margin-top: 8vh;
+  margin-top: 21vh;
   margin-right: -84vw;
   width: 3vw;
-  height: 45vh;
-  background-color: #f2f2f2;
-  border-radius: 2rem;
+  height: 6vh;
+  background-color: #af34ff61;
+  border-radius: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
